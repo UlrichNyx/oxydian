@@ -1,0 +1,9 @@
+[package]
+name = "Oxydian"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+winit = "0.28"
+glium = "0.31"
+nalgebra = "0.30"
