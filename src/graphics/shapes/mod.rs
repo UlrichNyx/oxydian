@@ -4,14 +4,68 @@ use vertex::Vertex2D;
 
 use vertex::Vertex3D;
 
+pub fn create_cube_3d() -> Vec<Vertex3D> {
+    vec![
+        // Front face
+        Vertex3D { position: [-0.5, -0.5, 0.5] },
+        Vertex3D { position: [0.5, -0.5, 0.5] },
+        Vertex3D { position: [-0.5, 0.5, 0.5] },
+        Vertex3D { position: [0.5, -0.5, 0.5] },
+        Vertex3D { position: [0.5, 0.5, 0.5] },
+        Vertex3D { position: [-0.5, 0.5, 0.5] },
+
+        // Back face
+        Vertex3D { position: [-0.5, -0.5, -0.5] },
+        Vertex3D { position: [-0.5, 0.5, -0.5] },
+        Vertex3D { position: [0.5, -0.5, -0.5] },
+        Vertex3D { position: [0.5, -0.5, -0.5] },
+        Vertex3D { position: [-0.5, 0.5, -0.5] },
+        Vertex3D { position: [0.5, 0.5, -0.5] },
+
+        // Left face
+        Vertex3D { position: [-0.5, -0.5, -0.5] },
+        Vertex3D { position: [-0.5, -0.5, 0.5] },
+        Vertex3D { position: [-0.5, 0.5, -0.5] },
+        Vertex3D { position: [-0.5, -0.5, 0.5] },
+        Vertex3D { position: [-0.5, 0.5, 0.5] },
+        Vertex3D { position: [-0.5, 0.5, -0.5] },
+
+        // Right face
+        Vertex3D { position: [0.5, -0.5, -0.5] },
+        Vertex3D { position: [0.5, 0.5, -0.5] },
+        Vertex3D { position: [0.5, -0.5, 0.5] },
+        Vertex3D { position: [0.5, -0.5, 0.5] },
+        Vertex3D { position: [0.5, 0.5, -0.5] },
+        Vertex3D { position: [0.5, 0.5, 0.5] },
+
+        // Top face
+        Vertex3D { position: [-0.5, 0.5, -0.5] },
+        Vertex3D { position: [-0.5, 0.5, 0.5] },
+        Vertex3D { position: [0.5, 0.5, -0.5] },
+        Vertex3D { position: [-0.5, 0.5, 0.5] },
+        Vertex3D { position: [0.5, 0.5, 0.5] },
+        Vertex3D { position: [0.5, 0.5, -0.5] },
+
+        // Bottom face
+        Vertex3D { position: [-0.5, -0.5, -0.5] },
+        Vertex3D { position: [0.5, -0.5, -0.5] },
+        Vertex3D { position: [-0.5, -0.5, 0.5] },
+        Vertex3D { position: [-0.5, -0.5, 0.5] },
+        Vertex3D { position: [0.5, -0.5, -0.5] },
+        Vertex3D { position: [0.5, -0.5, 0.5] },
+    ]
+}
+
 pub fn create_rectangle_3d() -> Vec<Vertex3D> {
     vec![
-        Vertex3D { position: [-0.5, -0.5, 0.0] },  // Bottom-left
-        Vertex3D { position: [ 0.5, -0.5, 0.0] },  // Bottom-right
-        Vertex3D { position: [-0.5,  0.5, 0.0] },  // Top-left
-        Vertex3D { position: [-0.5,  0.5, 0.0] },  // Top-left (again)
-        Vertex3D { position: [ 0.5, -0.5, 0.0] },  // Bottom-right (again)
-        Vertex3D { position: [ 0.5,  0.5, 0.0] },  // Top-right
+        Vertex3D { position: [-0.5, -0.5, 0.0] },  
+        Vertex3D { position: [ 0.5, -0.5, 0.0] }, 
+        Vertex3D { position: [-0.5,  0.5, 0.0] }, 
+        Vertex3D { position: [-0.5,  0.5, 0.0] },  
+        Vertex3D { position: [ 0.5, -0.5, 0.0] },  
+        Vertex3D { position: [ 0.5,  0.5, 0.0] },  
+        Vertex3D { position: [ 0.5, 0.5, 0.5] }, 
+        Vertex3D { position: [ -0.5,  -0.5, 0.5] },  
     ]
 }
  
